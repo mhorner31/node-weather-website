@@ -11,7 +11,7 @@ const forecast = (longitude, latitude, callback) => {
         } else {
             const current = response.body.current;
             const message = 'Current weather is ' + current.weather_descriptions[0] + 
-                '. It is ' + current.temperature + 'ºC out with ' + current.precip + '% chance of rain'
+                '. We have currently ' + current.temperature + 'ºC out with ' + current.precip + '% chance of rain'
             callback( undefined, message )
         }
     })
